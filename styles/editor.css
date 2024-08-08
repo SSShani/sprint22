@@ -11,8 +11,6 @@
 
 }
 
-
-
 #setTextInp{
     width: 100%;
     height: 35px;
@@ -22,7 +20,6 @@
     padding: 6px;
     text-align: center;
 }
-
 
 #upBtn,#downBtn{
     width: 20px;
@@ -47,13 +44,11 @@
     margin-bottom: 10px;;
 }
 
-
 #incBtn,#decBtn ,#alignLeftBtn,#alignCenterBtn,#alignRigthBtn{
     width: 38px;
     height: 38px;
 
 }
-
 
 #IMPACT{
     width: 150px;

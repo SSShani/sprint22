@@ -3,9 +3,8 @@ body{
     border: 1px solid;
     width: 635px;
     height: 446px;
-    /* background-image: url("../images/backgroundTemp.png");
-    background-repeat: no-repeat;
-    background-position: center; */
+    background-color: #d2b48c;
+      
 }
 
 #header{
@@ -21,16 +20,12 @@ body{
     padding: 20px 10px;
 }
 
-
-
-
 #logo{
     width: 30%;
     display: flex;
     justify-content: center;
     align-items: center;    
 }
-
 
 #menu{
     width: 65%;
@@ -39,11 +34,9 @@ body{
     align-items: center;    
 }
 
-
 #menu li{
     cursor: pointer;
 }
-
 
 @media screen and (max-width: 400px) {
     body{

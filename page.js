@@ -19,8 +19,6 @@ function renderHeader(){
     menu_about.onclick      =    function(){changePage("about")}
 }
 
-
-
 function renderMemePage(){
     root.innerHTML = `
         <div class="inlile-flex">
@@ -42,7 +40,6 @@ function renderGalleryPage(){
 function renderAboutPage(){
     root.innerHTML = `בבניה`
 }
-
 
 function changePage(pageName) {
     page = pageName;

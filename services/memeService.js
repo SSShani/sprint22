@@ -61,11 +61,8 @@ function getImgs(filters=[]) {
     }
     return ret;
 }
-
 function isLineEmpty(){return gMeme.lines.length == 0}
 function getFocusLine(){return gMeme.lines[gMeme.selectedLineIdx]}
-
-
 function addLine(txt,size,color){
     gMeme.lines.push({txt,size,color,borderRadius:0,direction :"right",border:0,x:0,y:0,width:200,height:40,backgroundColor:"rgba(255, 255, 255, 0)"})
     gMeme.selectedLineIdx++
@@ -87,7 +84,6 @@ function setImg(imgId) {
     gMeme.selectedImgId =imgId;
     renderMeme()
 }
-
 function setLineTxt(txt){
     gMeme.lines[gMeme.selectedLineIdx].txt = txt
     renderMeme()
@@ -109,7 +105,6 @@ function selectedLineIdxDown(){
     }
     else console.log("לא ניתן לרדת מתחת ל0")   
 }
-
 function switchLines(){
     if(gMeme.lines.length == 2){
         gMeme.lines = gMeme.lines.reverse() 
@@ -117,7 +112,6 @@ function switchLines(){
     }
     else console.log("אין כרגע 2 שורות")
 }
-
 function setColorText(color){
     if(gMeme.lines[gMeme.selectedLineIdx]){
         gMeme.lines[gMeme.selectedLineIdx].color = color
@@ -132,7 +126,6 @@ function setStrokColor(color){
     }
     else console.log("יש ליצור שורה קודם")
 }
-
 function increaseFont(){
     if(gMeme.lines[gMeme.selectedLineIdx]){
         gMeme.lines[gMeme.selectedLineIdx].size++
