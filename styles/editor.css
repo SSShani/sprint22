@@ -1,0 +1,72 @@
+#editor{
+    width: 280px;
+    height: 350px;
+    /* background-color: aqua;
+    border: 1px solid;
+    opacity: 30%; */
+    margin:-5px 10px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+#setTextInp{
+    width: 100%;
+    height: 35px;
+    border:1px solid;
+    border-radius:10px;
+    margin-bottom:10px ;
+    padding: 6px;
+    text-align: center;
+}
+
+
+#upBtn,#downBtn{
+    width: 20px;
+    height: 38px;
+    border: 1px solid;
+    margin-left: 5px;
+}
+
+#switchBtn,#addLinesBtn,#delete{
+    width: 40px;
+    height: 38px;
+    border: 1px solid;
+    margin: 0px 9px;
+}
+
+#editor-para-container{
+    height:110px;
+    margin-top: 10px;
+    border: 2px solid;
+    padding: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;;
+}
+
+
+#incBtn,#decBtn ,#alignLeftBtn,#alignCenterBtn,#alignRigthBtn{
+    width: 38px;
+    height: 38px;
+
+}
+
+
+#IMPACT{
+    width: 150px;
+    height: 38px;
+    border: 1px solid;
+}
+
+#strokColorBtn,#setColorInp{
+    width: 38px;
+    height: 38px;
+}
+
+#stickers{
+    height: 100px;
+    border: 1px solid;
+}

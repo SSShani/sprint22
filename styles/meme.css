@@ -1,0 +1,23 @@
+#memeContainer {
+    position: relative;
+    width: 296px;
+    height: 350px;
+    margin:-5px 10px;
+}
+#canvas {
+    border: 1px solid black;
+}
+.textLine {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+}
+#topText {
+    top: 30px;
+}
+#bottomText {
+    bottom: 30px;
+}

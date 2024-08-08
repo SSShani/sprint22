@@ -1,0 +1,29 @@
+#gallery{
+    /* border: 1px solid; */
+    padding: 10px;
+    width: 100%;
+    /* height:  100%; */
+}
+
+#gridGallery{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap:10px
+}
+
+.gallery-item , .gallery-item img{
+    width: 100%;
+    height: 60px;
+}
+
+@media screen and (max-width: 400px) {
+    #gridGallery{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap:10px
+    }
+    .gallery-item , .gallery-item img{
+        width: 100%;
+        height: 100px;
+    }
+}
