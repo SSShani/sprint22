@@ -2,7 +2,7 @@ let page = "meme"
 let root = document.getElementById("root")
 
 function renderHeader(){
-    let header = document.getElementById("header")
+    let header = document.getElementById("header");
     header.innerHTML = `
         <div id="logo">LOGO</div>
         <ul id="menu">
@@ -10,14 +10,22 @@ function renderHeader(){
             <li id="menu_memes">Memes</li>
             <li id="menu_about">About</li>
         </ul>
-    `
-    let menu_gallery = document.getElementById("menu_gallery")
-    let menu_memes = document.getElementById("menu_memes")
-    let menu_about = document.getElementById("menu_about")
-    menu_gallery.onclick    =    function(){changePage("gallery")}
-    menu_memes.onclick      =    function(){changePage("home")}
-    menu_about.onclick      =    function(){changePage("about")}
+    `;
+
+    let menu_gallery = document.getElementById("menu_gallery");
+    let menu_memes = document.getElementById("menu_memes");
+    let menu_about = document.getElementById("menu_about");
+    menu_gallery.onclick = function(){changePage("gallery")};
+    menu_memes.onclick = function(){changePage("home")};
+    menu_about.onclick = function(){changePage("about")};
+
+    let inputFile = document.createElement('input');
+    inputFile.type = 'file';
+    inputFile.id = 'imgUpload';
+    inputFile.accept = 'image/*';
+    header.appendChild(inputFile);
 }
+
 
 function renderMemePage(){
     root.innerHTML = `

@@ -160,3 +160,29 @@ function getLines(ctx, text, maxWidth) {
     lines.push(currentLine);
     return lines;
 }
+
+
+
+document.getElementById('imgUpload').addEventListener('change', function(e) {
+    let file = e.target.files[0];
+    let reader = new FileReader();
+
+    reader.onload = function(event) {
+        let img = new Image();
+        img.src = event.target.result;
+
+        img.onload = function() {
+            const canvas = document.getElementById('canvas');
+            const ctx = canvas.getContext('2d');
+
+            canvas.width = img.width;
+            canvas.height = img.height;
+
+            ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+
+            gMeme.selectedImgId = null; 
+        };
+    };
+
+    reader.readAsDataURL(file);
+});
